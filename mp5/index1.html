@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Registration Form</h2>
+        <form id="registrationForm" method="POST" action="submit1.php">
+            <label for="firstname">First name:</label>
+            <input type="name" class="form-control" placeholder="ex:ananya" aria-label="name" id="name" name="name" required>
+
+                <label for="lastname">Last name:</label>
+                <input type="name" class="form-control" placeholder="ex:lakshmi" aria-label="name" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" placeholder="ex:example@gmail.com" aria-label="email" id="email" name="email" required>
+            
+            <label for="phone">Phone:</label>
+            <input type="text" class="form-control" placeholder="ex:9999999999" aria-label="Phone No" id="phone" name="phone" required>
+            
+            <label for="address">Address:</label>
+            <textarea id="address" class="form-control" placeholder="ex:4th street... " aria-label="First name" name="address" required></textarea>
+            
+            
+            
+
+
+            <button type="submit">Submit</button>
+        </form>
+        <div id="successMessage" style="display:none;">
+            <h3>Form submitted successfully!</h3>
+            <p id="displayData"></p>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script1.js"></script>
+</body>
+</html>
+
